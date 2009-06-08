@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<project name="Fill" default="all" basedir=".">
+
+<!-- set global properties for this build -->
+<property name="src" value="src" />
+<property name="build" value="build" />
+
+<target name="init">
+<!-- Create the time stamp -->
+<tstamp/>
+</target>
+
+<target name="compile" depends="init">
+<!-- Compile the java code from ${src} into ${build} -->
+<javac srcdir="${src}" destdir="${build}" debug="true"/>
+</target>
+
+<target name="all" depends="compile">
+</target>
+
+<!-- example of jarring 
+<target name="jar"> 
+	<mkdir dir="build/jar"/> 
+	<jar destfile="resources/jars/HelloWorld.jar" basedir="classes">
+		<manifest>
+			<attribute name="Main-Class" value="HelloWorld"/>
+		</manifest>
+	</jar>
+</target>
+-->
+
+</project>
+
