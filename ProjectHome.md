@@ -1,0 +1,1 @@
+CV-NICS (Correspondence via Noise Informed Corollary Statistics) is a suite of Java/C command line utilities for performing structured light scanning with an ordinary camera and projector. Designed for casual use, CV-NICS does not require camera calibration or rigging.
